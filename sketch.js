@@ -51,15 +51,6 @@ function draw() {
 
   angle += 0.01;
 
-  // let theta = radians(lat) + PI / 2;
-  // let phi = radians(lon) + PI;
-  //
-  // let x = sphereRadius * sin(theta) * cos(phi);
-  // let y = -sphereRadius * sin(theta) * sin(phi);
-  // let z = sphereRadius * cos(theta);
-  //
-  // translate(x, y, z);
-  // box(10);
   normalMaterial();
   // forEach: https://wiki.selfhtml.org/wiki/JavaScript/Objekte/Array/forEach
   let rows = earthquakes.getRows();
