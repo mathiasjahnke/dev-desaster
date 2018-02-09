@@ -33,7 +33,6 @@ function preload() {
 function setup() {
   createElement("h1", "Rotating Globe");
   createCanvas(500, 500, WEBGL);
-  // angle = PI / 4;
 }
 
 function draw() {
