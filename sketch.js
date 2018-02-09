@@ -53,7 +53,7 @@ function draw() {
   normalMaterial();
   // forEach: https://wiki.selfhtml.org/wiki/JavaScript/Objekte/Array/forEach
   let rows = earthquakes.getRows();
-  // console.log(rows);
+
   rows.forEach(function(s, i, o) {
     let lat = s.get("latitude");
     let lon = s.get("longitude");
@@ -70,6 +70,7 @@ function draw() {
     // let cx = sphereRadius * sin(theta) * cos(phi);
     // let cy = -sphereRadius * sin(theta) * sin(phi);
     // let cz = sphereRadius * cos(theta);
+    //from tadimon/earth.pde
     let alt = sphereRadius + h / 2;
     let cx = alt * cos(theta) * cos(phi);
     let cy = alt * cos(theta) * sin(phi);
